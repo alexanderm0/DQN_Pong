@@ -1,11 +1,12 @@
-from tensorflow.keras.models import Sequential, clone_model
-from tensorflow.keras.layers import Dense, Flatten, Conv2D, Input
-from tensorflow.keras.optimizers import Adam
-import keras.backend as K
-import tensorflow as tf
-from agent_memory import Memory
-import numpy as np
 import random
+
+import numpy as np
+import tensorflow as tf
+from keras.layers import Dense, Flatten, Conv2D, Input
+from keras.models import Sequential, clone_model
+from keras.optimizer_v2.adam import Adam
+
+from agent_memory import Memory
 
 
 class Agent():
